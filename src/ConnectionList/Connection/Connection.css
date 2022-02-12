@@ -1,0 +1,66 @@
+.connection-box{
+    border-radius: 10px;
+    max-width: 350px;
+    height: 400px;
+    text-align: center;
+    font-family:'Roboto'sans-serif;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    margin-right: 15px;
+    
+}
+.connection-box .cover-photo{
+    height:150px;
+    position: relative;
+}
+.connection-box .cover-photo img
+{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profile-pic{
+    width: 65px;
+    height:65px;
+    position: absolute;
+    bottom: -25px;
+    left: 40%;
+}
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+border-radius: 50%;
+}
+.connection-box h2{
+    padding: 20px 0 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.connection-box p{
+   margin: 0;
+   font-size: 14px;
+}
+.text-center{
+    text-align: center;
+}
+.cancel-btn{
+    border: none;
+    background-color: #f8121ee8;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+input{
+    outline: none;
+    border: 1px solid #e2e2e2;
+    height: 45px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+}

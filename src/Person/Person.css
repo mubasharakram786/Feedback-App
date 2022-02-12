@@ -1,0 +1,26 @@
+.card{
+    box-shadow: 0px 0px 5px rgba(0,0,0,16%);
+    margin: 15px;
+    display: inline-block;
+}
+.card-body{
+ display: flex;
+    justify-content: center;
+    flex-direction: column;
+     min-height: 300px;
+       padding: 20px;
+}
+.card-body p{
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 14px;
+    color: #202020;
+}
+.card-body input{
+outline: none;
+height: 40px;
+border: 1px solid #e2e2e2;
+width: 250px;
+max-width: 100%;
+padding-left: 10px;
+}
