@@ -24,3 +24,11 @@ header{
   color: #fff;
   background-color: #ff6a95;
 }
+button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
