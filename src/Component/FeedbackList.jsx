@@ -7,7 +7,7 @@ function FeedbackList({feedback,deleteFeedback}) {
         return <p>No feedback yet</p>
     }
   return (
-    <div>
+    <div className='feedback-list'>
         {feedback.map(item=>{
       return  <FeedbackItems key={item.id} item={item} handleDelete={deleteFeedback}/>
     })}

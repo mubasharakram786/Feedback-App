@@ -1,12 +1,13 @@
 import {useState} from 'react'
 
-function RatingSelect() {
+function RatingSelect({select}) {
     const[selected,setSelected]=useState(1);
     const handleSelect=(e)=>{
-       console.log(e.currentTarget.value)
+      setSelected(+e.currentTarget.value);
+      select(+e.currentTarget.value)
     }
   return (
-   <ul className='rating-list'>
+   <ul className='rating'>
        <li>
            <input
             type="radio"
@@ -122,3 +123,5 @@ function RatingSelect() {
 }
 
 export default RatingSelect
+
+
