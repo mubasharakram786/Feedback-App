@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Card from '../Component/Shared/Card'
 function AboutPage() {
   return (

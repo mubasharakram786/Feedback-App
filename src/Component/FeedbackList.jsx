@@ -1,15 +1,16 @@
-import React from 'react'
+import { useContext } from 'react'
+import FeedbackContext from '../context/FeedbakContext'
 import FeedbackItems from './FeedbackItems'
 
-function FeedbackList({feedback,deleteFeedback}) {
-
-    if(!feedback || feedback.length===0){
+function FeedbackList() {
+    const{feedback}=useContext(FeedbackContext)
+    if(!feedback || feedback.length===0){ 
         return <p>No feedback yet</p>
     }
   return (
     <div className='feedback-list'>
         {feedback.map(item=>{
-      return  <FeedbackItems key={item.id} item={item} handleDelete={deleteFeedback}/>
+      return  <FeedbackItems key={item.id} item={item} />
     })}
     </div>
     
